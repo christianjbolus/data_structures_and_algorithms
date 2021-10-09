@@ -13,3 +13,9 @@ class Stack {
     return this.stack[this.stack.length - 1];
   }
 }
+
+class BracketValidator {
+  constructor(public stack: Stack) {
+    this.stack = new Stack()
+  }
+}
