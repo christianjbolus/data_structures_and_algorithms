@@ -1,3 +1,5 @@
+// Stack class of type 'string'
+
 export class Stack {
   stack: string[] = [];
 
