@@ -1,24 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BracketValidator = void 0;
-var Stack = /** @class */ (function () {
-    function Stack() {
-        this.stack = [];
-    }
-    Stack.prototype.add = function (str) {
-        this.stack.push(str);
-    };
-    Stack.prototype.remove = function () {
-        return this.stack.pop();
-    };
-    Stack.prototype.read = function () {
-        return this.stack[this.stack.length - 1];
-    };
-    return Stack;
-}());
+var Stack_1 = require("./Stack");
 var BracketValidator = /** @class */ (function () {
     function BracketValidator() {
-        this.stack = new Stack();
+        this.stack = new Stack_1.Stack();
     }
     BracketValidator.prototype.validate = function (str) {
         for (var _i = 0, str_1 = str; _i < str_1.length; _i++) {
