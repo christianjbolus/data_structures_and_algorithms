@@ -1,4 +1,4 @@
-import { BracketValidator } from './bracketValidator'
+import { BracketValidator } from './BracketValidator'
 import { validJS, invalidJS } from './testStrings'
 
 const validator = new BracketValidator()
