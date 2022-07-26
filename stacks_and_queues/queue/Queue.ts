@@ -1,7 +1,7 @@
 // Generic Queue class of type 'any'
 
 class Queue {
-  queue = [];
+  queue: Array<any> = [];
 
   enqueue(data) {
     this.queue.push(data);

@@ -1,7 +1,7 @@
 // Generic Stack class of type 'any'
 
 class Stack {
-  stack = [];
+  stack: Array<any> = [];
 
   add(data) {
     this.stack.push(data);
