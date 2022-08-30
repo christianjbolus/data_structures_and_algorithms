@@ -1,17 +1,18 @@
 // Generic Stack class of type 'any'
 
-class Stack {
-  stack: Array<any> = [];
+class Stack<T> {
+  stack: Array<T> = [];
 
-  add(data) {
+  add(data: T): number {
     this.stack.push(data);
+    return this.stack.length;
   }
 
-  remove() {
+  remove(): T | undefined {
     return this.stack.pop();
   }
 
-  read() {
+  read(): T | undefined {
     return this.stack[this.stack.length - 1];
   }
 }

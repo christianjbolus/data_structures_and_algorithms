@@ -1,7 +1,7 @@
 import { Stack } from './Stack'
 
 export class BracketValidator {
-  stack: Stack
+  stack: Stack<string>
   constructor() {
     this.stack = new Stack()
   }

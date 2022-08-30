@@ -1,17 +1,15 @@
-// Stack class of type 'string'
+export class Stack<T> {
+  stack: Array<T> = [];
 
-export class Stack {
-  stack: string[] = [];
-
-  add(str: string) {
-    this.stack.push(str);
+  add(val: T) {
+    this.stack.push(val);
   }
 
-  remove(): string {
+  remove(): T | undefined {
     return this.stack.pop();
   }
 
-  read(): string | undefined {
+  read(): T | undefined {
     return this.stack[this.stack.length - 1];
   }
 }

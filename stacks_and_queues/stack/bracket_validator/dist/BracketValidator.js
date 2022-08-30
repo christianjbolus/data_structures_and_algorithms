@@ -14,7 +14,8 @@ var BracketValidator = /** @class */ (function () {
             }
             else if (this.isClosingBracket(char)) {
                 var poppedBracket = this.stack.remove();
-                // If the popped bracket does match the closing bracket, we have a missing/invalid opening bracket
+                // If the popped bracket does match the closing bracket or is undefined,
+                // we have an invalid/missing opening bracket
                 if (!this.isBracketMatch(poppedBracket, char)) {
                     return false;
                 }
