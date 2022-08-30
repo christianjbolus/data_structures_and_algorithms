@@ -1,4 +1,3 @@
-// Generic Queue class of type 'any'
 class Item<T> {
   val: T | null = null;
   next: Item<T> | null = null;
@@ -41,6 +40,3 @@ class Queue<T> {
     return this.first;
   }
 }
-
-const queue = new Queue<number>()
-queue.enqueue(7)
