@@ -1,5 +1,3 @@
-// Generic Stack class of type 'any'
-
 class Stack<T> {
   stack: Array<T> = [];
 
